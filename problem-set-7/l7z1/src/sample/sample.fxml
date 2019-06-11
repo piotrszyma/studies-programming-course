@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="99.0" prefWidth="436.0">
+         <children>
+            <TextField fx:id="columnsField" layoutX="87.0" layoutY="15.0" onKeyPressed="#onKeyTyped" prefHeight="31.0" prefWidth="70.0" text="10" />
+            <Label layoutX="14.0" layoutY="20.0" text="Kolumny:" />
+            <TextField fx:id="rowsField" layoutX="87.0" layoutY="54.0" onKeyPressed="#onKeyTyped" prefHeight="31.0" prefWidth="70.0" text="10" />
+            <Label layoutX="14.0" layoutY="59.0" text="Rzędy:" />
+            <TextField fx:id="probField" layoutX="252.0" layoutY="15.0" onKeyPressed="#onKeyTyped" prefHeight="31.0" prefWidth="70.0" text="0.5" />
+            <Label layoutX="167.0" layoutY="20.0" text="Szansa:" />
+            <TextField fx:id="timeField" layoutX="252.0" layoutY="54.0" onKeyPressed="#onKeyTyped" prefHeight="31.0" prefWidth="70.0" text="1000" />
+            <Label layoutX="167.0" layoutY="59.0" text="Czas (ms):" />
+            <Button fx:id="startButton" layoutX="350.0" layoutY="31.0" mnemonicParsing="false" onAction="#onStartButton" text="Generuj" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
